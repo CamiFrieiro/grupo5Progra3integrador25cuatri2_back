@@ -6,7 +6,7 @@ import cors from "cors";   //middleware
 
 //se importa desde middleware.js
 import { loggerUrl, validateId } from "./src/api/middlewares/middlewares.js";
-import { productRoutes } from "./src/api/routes/index.js";
+import { productRoutes, viewRoutes } from "./src/api/routes/index.js";
 
 import { join, __dirname } from "./src/api/utils/index.js";
 
@@ -27,12 +27,8 @@ app.set("views", join(__dirname, "src/views")); //vistas desde la carpeta views
 
 app.use("/api/products", productRoutes);
 
-app.get("/dashboard", (req, res) => {
-    res.render("index", {
-        title: "Dashboard",
-        about: "Listado de Productos"
-    });
-})
+app.use("/", viewRoutes);
+
 
 app.listen(PORT, () => {
     console.log(`Servidor corriendo en el puerto ${PORT}`);
