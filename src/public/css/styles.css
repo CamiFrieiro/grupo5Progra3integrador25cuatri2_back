@@ -59,3 +59,32 @@ li {
 .mensaje-error strong {
     color: #ae4f4e;
 }
+
+#alta-container{
+    display: flex;
+    align-items: start;
+}
+
+.error-message {
+    padding: 10px;
+    border: 2px solid #eb99a1;
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #eb99a1;
+}
+
+#login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 350px;
+    justify-content: space-evenly;
+}
+
+.login-botonera {
+    display: flex;
+}
