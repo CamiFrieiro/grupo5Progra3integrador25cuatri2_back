@@ -1,4 +1,4 @@
-import dotenv from "dotenv";
+import dotenv from "dotenv";  // importa libreria para leer .env
 
 dotenv.config()  // carga variables de entorno desde .env
 

@@ -19,7 +19,7 @@ router.get("/crear", requireLogin, (req, res) =>{
 
     res.render("crear", {
         title: "Crear",
-        about: "Consultar producto"
+        about: "Crear producto"
     });
 } );
 
